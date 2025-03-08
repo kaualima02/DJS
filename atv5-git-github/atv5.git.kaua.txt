@@ -1,0 +1,142 @@
+test.git.kaua
+https://github.com/kaualima02/DJS
+
+PS C:\Users\Aluno\Desktop\DJS> mkdir README.md
+
+
+    Diretório: C:\Users\Aluno\Desktop\DJS
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        01/03/2025     11:26                README.md
+
+
+PS C:\Users\Aluno\Desktop\DJS> cd .\README.md\
+PS C:\Users\Aluno\Desktop\DJS\README.md> git add .
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\Aluno\Desktop\DJS\README.md> cd ..
+PS C:\Users\Aluno\Desktop\DJS> mkdir README.md
+
+
+    Diretório: C:\Users\Aluno\Desktop\DJS
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        01/03/2025     11:30                README.md
+
+
+PS C:\Users\Aluno\Desktop\DJS> cd .\README.md\
+PS C:\Users\Aluno\Desktop\DJS\README.md> echo "Esse é um teste para o curso"
+Esse é um teste para o curso
+PS C:\Users\Aluno\Desktop\DJS\README.md> cd ..
+PS C:\Users\Aluno\Desktop\DJS> mkdir anotacoes    
+
+
+    Diretório: C:\Users\Aluno\Desktop\DJS
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        01/03/2025     11:33                anotacoes
+
+
+PS C:\Users\Aluno\Desktop\DJS> cd aontacoes                                            
+cd : Não é possível localizar o caminho 'C:\Users\Aluno\Desktop\DJS\aontacoes' porque ele não existe.
+No linha:1 caractere:1
++ cd aontacoes
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Aluno\Desktop\DJS\aontacoes:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\Aluno\Desktop\DJS> mkdir anotacoes.txt
+
+
+    Diretório: C:\Users\Aluno\Desktop\DJS
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        01/03/2025     11:35                anotacoes.txt
+
+
+PS C:\Users\Aluno\Desktop\DJS> echo "A linguagem de programação Javascript permite ao desenvolvedor implementar diversos itens de alto nível de complexidade em páginas web, como animações, mapas, gráficos ou informações que se atualizam em intervalos de tempo padrão, por exemplo." > anotacoes.txt   
+out-file : O acesso ao caminho 'C:\Users\Aluno\Desktop\DJS\anotacoes.txt' foi negado.
+No linha:1 caractere:1
++ echo "A linguagem de programação Javascript permite ao desenvolvedor  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [Out-File], UnauthorizedAccessException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
+
+PS C:\Users\Aluno\Desktop\DJS> echo "A linguagem de programação Javascript permite ao desenvolvedor implementar diversos itens de alto nível de complexidade em páginas web, como animações, mapas, gráficos ou informações que se atualizam em intervalos de tempo padrão, por exemplo." > anotacoes1.txt 
+PS C:\Users\Aluno\Desktop\DJS> git add .
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\Aluno\Desktop\DJS> git innit 
+git: 'innit' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+PS C:\Users\Aluno\Desktop\DJS> git add .
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\Aluno\Desktop\DJS> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\Aluno\Desktop\DJS> git init
+Initialized empty Git repository in C:/Users/Aluno/Desktop/DJS/.git/
+PS C:\Users\Aluno\Desktop\DJS> git add .
+PS C:\Users\Aluno\Desktop\DJS> git commit -m "Primeiro commit" 
+[master (root-commit) 84754c5] Primeiro commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 anotacoes1.txt
+PS C:\Users\Aluno\Desktop\DJS> git branch -M main
+PS C:\Users\Aluno\Desktop\DJS> git remote add origin  https://github.com/kaualima02/DJS.git
+PS C:\Users\Aluno\Desktop\DJS> git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 461 bytes | 461.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/kaualima02/DJS.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\Aluno\Desktop\DJS> cd README
+cd : Não é possível localizar o caminho 'C:\Users\Aluno\Desktop\DJS\README' porque ele não existe.
+No linha:1 caractere:1
++ cd README
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Aluno\Desktop\DJS\README:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\Aluno\Desktop\DJS> echo "# DESENVOLVIMENTO JS" >> README.md
+out-file : O acesso ao caminho 'C:\Users\Aluno\Desktop\DJS\README.md' foi negado.
+No linha:1 caractere:1
++ echo "# DESENVOLVIMENTO JS" >> README.md
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [Out-File], UnauthorizedAccessException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
+
+PS C:\Users\Aluno\Desktop\DJS> echo "# DESENVOLVIMENTO JS" >> README.md
+out-file : O acesso ao caminho 'C:\Users\Aluno\Desktop\DJS\README.md' foi negado.
+No linha:1 caractere:1
++ echo "# DESENVOLVIMENTO JS" >> README.md
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [Out-File], UnauthorizedAccessException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
+
+PS C:\Users\Aluno\Desktop\DJS> echo "# DESENVOLVIMENTO JS" >> README.md
+PS C:\Users\Aluno\Desktop\DJS> git add .
+PS C:\Users\Aluno\Desktop\DJS> git commit -m " Adicionado no readme"  
+[main 087faa1]  Adicionado no readme
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+PS C:\Users\Aluno\Desktop\DJS> git push 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 327 bytes | 327.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/kaualima02/DJS.git
+   84754c5..087faa1  main -> main
+PS C:\Users\Aluno\Desktop\DJS>

@@ -1,0 +1,47 @@
+RF Login: 
+
+*Sistema deve incluir nome, data de nascimento e algum outro registro de documento (RA,RG,CPF) 
+
+*O sistema deve aplicar uma senha para cada usuário, mostrando o quão segura é essa senha  
+
+*O sistema poderia ser capaz de alertar algum campo não preenchido pelo usuário
+
+*O sistema deve orientar o usuário por onde ele deve começar 
+
+*O sistema pode incluir termos de uso e privacidade aos usuários antes de preencherem os dados 
+
+RNF Login: 
+
+*Interface leve e objetiva
+
+*Sistema seguro, capaz de guardar os dados do usuário corretamente 
+
+*Sistema capaz de realizar cadastro com acentuamento nos nomes dos usuários ex: (Kauã)   
+
+RF NEW USER:
+
+*O sistema deve incluir um novo campo para que o novo usuário seja cadastrado
+
+*O sistema pode oferecer um campo para preencher os novos dados do usuário
+
+*O sistema deve incluir um aviso caso o usuário preencha um campo com algum dado já registrado ex(colocou o mesmo email ou o mesmo num de RG)
+
+*O sistema pode incluir um aviso dizendo que o novo cadastro foi feito com sucesso 
+
+RNF NEW USER: 
+
+*Interface simples e objetiva 
+
+*O usuário tem que oferecer novos dados que não estejam cadastrados
+
+*O cadastro deve ser feito de maneira objetiva e se for necessário com apoio do sistema 
+
+RF REC.SENHA: 
+
+*Sistema deve oferecer uma interface introdutiva mostrando passo a passo dos requisitos
+
+*Sistema deve apresentar uma conexão com algum dado, para que a senha seja recuperada ex(email, CPF) 
+
+*Sistema deve apresentar uma mensagem dizendo que a senha foi recuperada   
+
+ 
