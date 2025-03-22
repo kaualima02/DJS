@@ -14,9 +14,14 @@ font-size: 30px;
 
 #paragrafo {
 
-color: blueviolet;    
+color: rgb(120, 49, 187);    
 }
 
 .paragrafo {
     color:darkgray;
 }
+
+.margin{
+    margin: 20px;
+}
+
