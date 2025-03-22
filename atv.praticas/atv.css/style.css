@@ -1,0 +1,22 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    color: rgba(255, 0, 0, 0.712);
+    padding: 60px;
+}
+
+p{
+
+font-size: 30px;
+}
+
+#paragrafo {
+
+color: blueviolet;    
+}
+
+.paragrafo {
+    color:darkgray;
+}
