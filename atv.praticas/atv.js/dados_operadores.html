@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de dados exemplo</title>
+</head>
+<body>
+
+    
+<h1>Exemplo de tipos de dados e operadores</h1>
+
+<script>
+
+// Teste de texto    
+var nome = "Kaua Lima";
+var mensagem = "Hello World!";
+console.log("String: ", nome, mensagem);
+
+// Teste de numero
+var idade = 20;
+var altura = 1.85;
+var peso = 75;
+var numeroNegativo = -10;
+
+console.log("Number:", idade, altura, peso, numeroNegativo)
+
+// Booleanos Bool (true or false)
+var verdade = true;
+var falso = false;
+var idade = 18;
+var maiorIdade = idade >= 18;
+var menorIdade = idade < 18;
+console.log(maiorIdade, menorIdade);
+var igualdade = (10 == "10");
+var igualdadeVT = (10 == "10");
+console.log(igualdade, igualdadeVT)
+console.log(typeof idade, typeof igualdade)
+
+// Null 
+var valorNulo = null
+console.log(valorNulo)
+
+// Operadores Aritméticos
+
+var a = 10;
+var b = 15;
+
+var soma = a + b;
+var sub = a - b;
+var multi = a * b;
+var div = a / b;
+console.log(soma, sub, multi, div);
+var modulo = a % b;
+var potencia = a ** b;
+a++;
+b--;
+b = b - 1;
+console.log(modulo, potencia,a,b);
+
+// Operadores de atribuição combinada
+var num = 5;
+// num = num + 2;
+
+num += 2;
+console.log(num);
+
+num -=1;
+console.log(num);
+
+num *=3
+console.log(num);
+
+num /=2;
+console.log(num);
+
+num %=4;
+console.log(num);
+
+// Conversor de valores
+
+// String -> Number 
+
+var numTexto = "42";
+var convInt = parseInt(numTexto);
+var convFloat = parseFloat(numTexto);
+var convNumber = Number(numTexto);
+console.log(convInt, convFloat, convNumber); 
+
+// Number -> String 
+var numero = 123;
+var convString1 = numero.toString();
+var convString2 = String(numero);
+var convString3 = "" + numero;
+
+console.log(convString1, convString2, convString3);
+
+// Number -> Bool 
+var numPositivo = 42;
+var numZero = 0; 
+var numNegativo = -10;
+var boolPositivo = Boolean(numPositivo);
+var boolZero = Boolean(numZero);
+var boolNegativo = Boolean(numNegativo);
+console.log(boolPositivo, boolNegativo, boolZero)
+
+// String -> Bool 
+var textoVerdadeiro = "true";
+var textoFalso = "false";
+var textoVazio = "";
+var boolStg1 = Boolean(textoVerdadeiro);
+var boolStg2 = Boolean(textoVazio);
+var boolStg3 = Boolean(textoVazio);
+console.log(boolStg1, boolStg2, boolStg3)
+
+// Bool -> String 
+
+var verdadeiro = true; 
+var falso = false; 
+var boolString1 = verdadeiro.toString();
+var boolString2 = String(falso);
+console.log(boolString1, boolString2);
+
+// Prompt
+var nomeCompleto = prompt("Informe seu nome completo:");
+console.log(nomeCompleto);
+console.log(typeof nomeCompleto);
+alert(nomeCompleto);
+ 
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
