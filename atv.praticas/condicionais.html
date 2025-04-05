@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+</head>
+<body>
+    
+<script>
+
+//1. Condicional if 
+var idade = 18; 
+if( idade > 18 )
+{
+ console.log("Maior de idade")
+}
+else
+{
+console.log("Menor de idade")
+}
+
+//2. Condicional if else if
+if(idade > 18 ) 
+{
+console.log("Maior de idade")
+}
+else if (idade == 18)
+{
+    console.log ("Tem 18 anos")
+}
+else{
+    console.log("Menor de idade")
+}
+
+//3. Condicional com operadores logicos
+var notas = 7;
+var faltas = 15; 
+
+if (notas >= 7 || faltas <= 14)
+{
+    console.log("Aluno aprovado!")
+}
+else{
+    console.log("Aluno reprovado!")
+}
+
+//4. Condicional com string vazia;
+var nome = "";
+var mensagem = "";
+if(nome)
+{
+mensagem=nome;
+}else
+{
+mensagem= "Nome não informado";
+}
+console.log(mensagem);
+
+var nome = ""; 
+var idade = 18; 
+
+//5. Condicional com if else idades 
+if(nome){
+    if(idade >= 18){
+        conol.log(nome,idade);
+    }else{
+        console.log(nome)
+    }
+} else {
+    console.log("Nome não informado")
+}
+
+//6. Switch case 
+var categoria = "2"; 
+switch(categoria) {
+
+case"1" : console.log("R$ 11,22");break;
+
+case"2" : console.log("R$ 22,11");break;
+default: 
+console.log("Categotia livre, pode passar!")
+
+}
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

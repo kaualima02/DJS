@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+//Exercio 1 
+//numero maior que 10 
+
+var numero = 10;
+if(numero>= 10 )
+{
+console.log("Numero maior que 10");     
+}
+else
+{
+    console.log("Menor ou igual a 10");
+}
+
+// //Exercicio 2 
+// //saber se valor é par ou impar
+
+var valor = 4; 
+if( numero % 2 === 0 )
+{
+    console.log("Par");
+}
+else
+{
+console.log("Impar");
+}
+
+//Exercicio 3 
+//maior e menor numero 
+var numero1 = 10; 
+var numero2 = 20;
+var numero3 = 30; 
+
+var maior = numero1;
+var menor = numero2;
+
+if(numero2 > maior)
+{
+    menor = numero1;
+}
+if( numero3 > maior){
+    
+    maior = numero3;  
+}
+if( numero2 < menor){
+    
+    menor = numero2; 
+}
+if( numero3 < menor){
+    
+    menor = numero3;
+}
+console.log(menor, maior);
+
+//Exercicio 4 
+//Calcularoda simples => use switch
+
+var operacao1 = "-";  
+var numero1 = 10;
+var numero2 = 2; 
+
+switch(operacao1)
+{
+case"-":console.log(numero1-numero2);break;
+case "+":console.log(numero1+numero2);break;
+case "*":console.log(numero1*numero2);break;
+case "/":console.log(numero/numero2);break;
+default: 
+console.log("Nunhum valor inserido");
+}
+
+</script>
+</body>
+</html>
