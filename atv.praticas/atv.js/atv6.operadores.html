@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios</title>
+</head>
+<body>
+    
+<h1>Atividade de operadores</h1>
+
+<script>
+
+//1.Soma 
+var valor1 = prompt("Insira o primeiro valor");
+var valor2 = prompt("Insira o segundo valor");
+var soma = (parseInt(valor1) + (parseInt(valor2)));
+console.log(soma);     
+
+//2.Subtração
+var valor1 = prompt("Insira o primeiro valor");
+var valor2 = prompt("Insira o segundo valor");
+var menos= (parseInt(valor1) - (parseInt(valor2)));
+console.log(menos); 
+
+//3.Multiplicação 
+var valor1 = prompt("Insira o primeiro valor");
+var valor2 = prompt("Insira o segundo valor");
+var multiplicar= (parseInt(valor1) * (parseInt(valor2)));
+console.log(multiplicar); 
+
+//4.Dividir 
+var valor1 = prompt("Insira o primeiro valor");
+var valor2 = prompt("Insira o segundo valor");
+var dividir= (parseInt(valor1)/(parseInt(valor2)));
+console.log(dividir); 
+
+//5.Modulo 
+var valor1 = parseInt(prompt("Insira o primeiro valor"));
+var valor2 = parseInt(prompt("Insira o segundo valor"));
+var modulo = valor1 % valor2;
+console.log(modulo);  
+
+//6.Sucessor 
+ var valor1 = parseInt(prompt("Insira um valor"));
+ var resultado = parseInt((valor1)+1);
+ console.log(resultado); 
+
+//7.Antecessor 
+var valor1 = parseInt(prompt("Insira um valor"));
+var resultado = parseInt((valor1)-1);
+console.log(resultado);
+
+//8.Soma 3x
+var valor1 = parseInt(prompt("Insira o primeiro valor"));
+var valor2 = parseInt(prompt("Insira o segundo valor"));
+var valor3 = parseInt(prompt("Insira o terceiro valor"));
+var resultado = parseInt(valor1)+parseInt(valor2)+parseInt(valor3); 
+console.log(resultado);
+
+//9.Média 
+var valor1 = parseInt(prompt("Insira a nota do primeiro bimestre"));
+var valor2 = parseInt(prompt("Insira a nota do segundo bimestre"));
+var valor3 = parseInt(prompt("Insira a nota do terceiro bimestre"));
+var resultado = (valor1)+parseInt(valor2)+parseInt(valor3);
+var media = resultado / 3;
+console.log(media);
+
+//10.Área do circulo 
+let raio = parseFloat(prompt("Digite o raio do círculo:"));
+let area = 3.14 * (raio * raio);
+console.log("A área do círculo é: " + area);
+
+
+
+//11.Verdadeiro ou Falso idade
+let idade = Number(prompt("Digite sua idade:"));
+console.log(idade ? (idade >= 18 ? "Maior de idade" : "Menor de idade") : "Entrada inválida");
+console.log(typeof idade);
+alert(idade ? (idade >= 18 ? "Maior de idade" : "Menor de idade") : "Entrada inválida");
+
+//12.Verdadeiro ou Falso numeros 
+let numero = Number(prompt("Insira um valor"));
+let numPositivo = parseInt(numero);
+let numNegativo = parseFloat(numero);
+let numZero = parseFloat(numero);
+console.log(numero ? (numero >0 ? "Numero positivo" :  "Numero negativo") : "Igual a zero");
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
