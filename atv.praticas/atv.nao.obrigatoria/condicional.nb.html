@@ -8,7 +8,7 @@
 <body>
 <script>
 
-//1. Verificador de notas 
+// 1.Verificador de notas 
 var nota1 = 4;
 var nota2 = 5;
 var nota3 = 7;
@@ -26,19 +26,133 @@ if(nota3 >= 7)
     console.log("Aprovado!")
 }
 
-//2.Dia da semana 
-
-semana = 0;
-switch (semana){
-
+// 2.Dia da semana 
+var diaSemana = parseInt(prompt("Insira um numero:"));
+switch (diaSemana)
+{
+case "1" : console.log("Domingo");break; 
+case "2" : console.log("Segunda");break;
+case "3" : console.log("Terça");break;
+case "4" : console.log("Quarta");break;
+case "5" : console.log("Quinta");break;
+case "6" : console.log("Sexta");break;
+case "7" : console.log("Sábado");break;
+default:
+ console.log("Nenhum valor inserido");    
     
 }
 
+// 3.Classificação de idade 
+var solicitacao = parseInt(prompt("Insira sua idade:"));
+var idadeHumana = 130;
 
+if(idadeHumana >= 60)
+{
+console.log("Pessoa Idosa");
+}
+else if(idadeHumana = 18 || idadeHumana <= 59)
+{
+console.log("Pessoa Adulta");
+}
+else if(idadeHumana >= 13 || idadeHumana <= 18)
+{
+console.log("Pessoa Adolescente");
+}
+else if(idadeHumana >=0 || idadeHumana <= 13)
+{
+console.log("Criança")
+}
 
+// 4.Estações do ano 
+var solicitacao = parseInt(prompt("Insira um valor de 1 a 12 representando um mes: "));
 
+switch(true)
+{
+case (solicitacao == 12 || solicitacao == 1 || solicitacao == 2 ): 
+alert("Estamos no Verão!"); break;
 
+case (solicitacao == 3 || solicitacao == 4 || solicitacao == 5 ): 
+alert("Estamos no Outono!"); break;
 
+case (solicitacao == 6 || solicitacao == 7 || solicitacao == 8 ): 
+alert("Estamos no Inverno!"); break; 
+
+case (solicitacao == 9 || solicitacao == 10 || solicitacao == 11 ): 
+alert("Estamos na Primavera!"); break; 
+
+default: 
+alert("Numero invalido, insira valores de 1 a 12");
+}
+
+//5.Login Simples 
+var solicitacao1 = prompt("Insira um nome de usuario:");
+var solicitacao2 = prompt("Inserir senha:");
+var user = "admin";
+var key = "1234";
+
+if(solicitacao1 === user && solicitacao2 === key)
+{
+alert("Bem-vindo!");
+}
+else
+{
+alert("Usuario ou senha incorretos");
+}
+
+//6.Classificação de notas com Switch
+var classificacao = parseInt(prompt("Insira sua nota (de 0 a 10)"));
+
+switch(true)
+{
+ case (classificacao >= 0 && classificacao <= 4 ): alert("Insuficiente"); break;  
+case (classificacao >= 5 && classificacao <= 6 ): alert("Regular"); break;
+case (classificacao >= 7 && classificacao <= 8 ): alert("Bom"); break;
+case (classificacao >= 9 && classificacao <= 10): alert("Exelente!"); break;
+default: 
+alert("Nota invalida, Insira uma nota de 0 a 10");
+}
+
+//7. Verificador de Turno
+var solicitacao = String(prompt("Informe em qual preiodo você estuda (M,V ou N): "));
+
+if(solicitacao == "M")
+{
+    alert("Bom dia!");
+}
+else if (solicitacao == "V")
+{
+  alert("Boa tarde!");
+}
+else if (solicitacao == "N")
+{
+  alert("Boa noite!");  
+}
+else(alert("Turno invalido!"));
+
+//8.IMC
+
+var solicitacao1 = parseFloat(prompt("Insira seu peso"));
+var solicitacao2 = parseFloat(prompt("Insira sua altura"));
+
+var imc = solicitacao1 / (solicitacao2^2); 
+console.log(imc);
+
+if(imc < 18.5 )
+{
+alert("Abaixo do peso!");
+}
+else if( imc < 25)
+{
+    alert("Peso normal!");
+}
+else if (imc < 30)
+{
+    alert("Sobrepeso!");
+}
+else
+{
+ alert ("Obesidade!");
+}
 
 
 </script>
