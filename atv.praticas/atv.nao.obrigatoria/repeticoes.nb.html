@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetições </title>
+</head>
+<body>
+    <h1>Atividade Repetições não obrigatória</h1>
+    <script>
+
+//1. Lista de compras 
+var compras = ["Ovo, Leite, Aveia, Cereais, Pão"];
+
+for( var i= 0; i < compras.length; compras++) 
+{
+console.log(compras[0]);
+}
+
+//2. Numeros Impares entre 1 e 20
+
+for(var i =1 ; i <= 20; i+=2)
+{
+console.log(i)
+} 
+
+//3. Soma dos elementos de um array 
+
+var num = [2,4,6,8,10];
+var soma = 0;
+
+for(var i=0; i < num.length; i++)
+{
+soma += num[i];
+}
+console.log("A soma dos elementos é:", soma);
+
+//4. Verificação de um numero primo
+
+var solicitação = parseInt(prompt("Insira um número para identificar se é impar:"));
+var divisores = 0;
+
+for(var i = 0; i <= solicitação; i++)
+{
+if(solicitação % i === 0){
+divisores ++;
+ }
+}
+
+if(divisores === 2){
+    console.log(solicitação + " é um numero primo.");
+}
+else{
+    console.log(divisores + " não é um número primo.");
+}
+
+//5.Contagem de vogais em uma string
+
+var palavra = prompt("Digite uma palavra:");
+var totalVogais = 0;
+
+for (var i = 0; i < palavra.length; i++) { // length é um contador de valores (strings/int ...)
+    var letra = palavra[i]; 
+    // var letra = palavra[i]; serve para pegar uma letra especifica de cada palavra, se eu digito "amor", a toma a possição i[0], m = i[1], o = i[2]...
+    if (
+        letra === 'a' || letra === 'A' ||
+        letra === 'e' || letra === 'E' ||
+        letra === 'i' || letra === 'I' ||
+        letra === 'o' || letra === 'O' ||
+        letra === 'u' || letra === 'U'
+    )
+     {
+        totalVogais++;
+    }
+}
+
+console.log("A palavra '" + palavra + "' tem " + totalVogais + " vogais.");
+
+
+
+</script>
+</body>
+</html>
