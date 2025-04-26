@@ -53,10 +53,27 @@ else{
     console.log("Reprovado");   
 }
 
+// nota >= 7 e as faltas <=4
+function verificarAprovacao(n1,n2,n3,numFaltas)
+{
+var media = (n1+n2+n3)/3;
+if(media >= 7 && numFaltas <= 4)
+{
+ return "Aprovado";   
+}
+else
+{
+    return "Reprovado";
+}
+}
+console.log(verificarAprovacao(10,8,5,4));
+console.log(verificarAprovacao(10,8,5,5));
 
-
-
-
+var num1 = prompt("Escolha um de nossos aparelhos: 1-Celular, 2-Tablet, 3-Computador, 4-AppleWatch");
+function escolherAparelho(celular, tablet, computador, appleWatch) 
+{
+prompt("Escolha um de nossos aparelhos: 1-Celular, 2-Tablet, 3-Computador, 4-AppleWatch");
+}
 
 
 

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 9</title>
+</head>
+<body>
+    <h1> Atividade 9 - Funções</h1>
+
+<script>
+
+function verificarValor(num1)
+{
+if( num1 % 2 == 0 )
+{
+console.log("o numero é par");
+}
+else
+{
+console.log("o numero é impar");
+
+}
+}
+verificarValor(4);
+verificarValor(5);
+
+//Gerar tabuada, lista array [10,5,3,8,2]
+
+function gerarTabuada(numero){ 
+for(var i = 0; i <= numero.length; i++)
+{
+console.log(`Tabuada do ${numero[i]}`);
+for (var j = 1; j <= 10; j++) 
+{
+console.log(`${numero[i]} x ${j} = ${numero[i] * j}`);    
+}
+
+}
+
+}
+gerarTabuada([10,5,3,8,2]);
+
+
+//Calcular o IMC
+var solicitacao1 = parseFloat(prompt("Insira seu peso"));
+var solicitacao2 = parseFloat(prompt("Insira sua altura"));
+
+function calcularIMC(peso, altura) 
+{
+var imc = solicitacao1 / (solicitacao2^2);
+console.log("seu imc é:" + imc)	 
+
+if(imc < 18.5 )
+{
+console.log("você está abaixo do peso!");
+}
+else if (imc < 25) 
+{
+console.log("peso normal!");
+}
+else if (imc < 30)
+{
+    console.log("Você está com sobrepeso!");
+}
+else
+{
+    console.log("Você está com obesidade!");
+}
+
+}
+calcularIMC(80,1,80)
+calcularIMC(70,1.90)
+
+// verificar se é bissexto ou não!
+
+var ano = parseFloat(prompt("Insira um ano"));
+function verificarBissexto(ano) 
+{
+if((ano % 4 === 0 && ano % 100 !== 0 )|| ano % 400 === 0)
+console.log("ano bissexto");
+else 
+console.log("ano não bissexto");
+}
+verificarBissexto(ano);
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
